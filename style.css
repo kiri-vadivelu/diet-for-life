@@ -229,6 +229,10 @@
     
 }
 
+.resources li {
+  line-height: 4rem;
+}
+
 /* Social Link */
 
 .contact {
