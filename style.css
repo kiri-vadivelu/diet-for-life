@@ -235,8 +235,69 @@
 
 /* Social Link */
 
-.contact {
+.contact,
+.form {
   max-width: 960px;
+}
+
+  button,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--light);
+    color: var(--secondary);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+
+.contact-form-text {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  outline: none;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 15rem;
+}
+.contact-form-btn {
+  text-align: center;
+  background: var(--light);
+  color: var(--secondary);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: var(--theme);
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+.contact-form-text:focus {
+  outline: solid 2px var(--theme);
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  background-color: var(--theme);
 }
 
   .fa-email,
