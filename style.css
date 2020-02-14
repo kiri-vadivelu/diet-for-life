@@ -234,7 +234,6 @@
 }
 
 /* Social Link */
-
 .contact,
 .form {
   max-width: 960px;
@@ -307,6 +306,10 @@ input[type="email"]:valid {
     width: 35px;
     color: var(--light);
   }
+
+  .contact svg:hover {
+    color: var(--theme);
+  }
   
   .contact ul {
     text-align: center;
@@ -321,7 +324,6 @@ input[type="email"]:valid {
   }
     
 /* Media Queries */
-
 @media screen and (max-width: 600px) {
   
     #logo,
