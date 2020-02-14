@@ -36,16 +36,31 @@
 
         <div id="main">
             <article class="contact">
-                <h1>Get in Touch</h1>
-                <h3>Summary</h3>
-                <p>The objective of maintaining good health is turning out to be more challenging for millennials than
-                    their counterparts. Particularly in developed countries, the troubling trend is observed through
-                    intensifying health disorders among young adults living in urban cities. Private health experts
-                    attempt to untangle socially deprived lifestyle at a premium but none seem to agree with another;
-                    meanwhile, authorities appear muted on developing any substantial resolutions. From a social science
-                    perspective, Diet for Life Project investigated several concepts, misinformation and
-                    feasible solutions to the current problem of obesity on behalf of consumers. Should you be
-                    interested in contributing to the good-work, please email at hello@dietforlife.ca.</p>
+                <section>
+                    <h1>Get in Touch</h1>
+
+                    <form name="contact" method="POST" data-netlify="true">
+
+                        <p><label>Name<input type="text" name="name" class="contact-form-text"
+                                    placeholder="firstname lastname" required minlength="4" maxlength="40"></label></p>
+
+                        <p><label>Email<input type="email" name="email" class="contact-form-text"
+                                    placeholder="firstname.lastname@organization.com" required minlength="9"
+                                    maxlength="50"></label></p>
+
+                        <p><label>Subject<input type="text" name="subject" class="contact-form-text"
+                                    placeholder="subject" required minlength="5" maxlength="50"></label></p>
+
+                        <p><label>Message<textarea name="message" class="contact-form-text" placeholder="message"
+                                    required minlength="15" maxlength="500"></textarea></label></p>
+
+                        <p>
+                            <div data-netlify-recaptcha="true"></div>
+                        </p>
+
+                        <p><input type="submit" class="contact-form-btn" value="Send"></label></p>
+                    </form>
+                </section>
                 <ul>
                     <li>
                         <a href="mailto:hello@dietforlife.ca" target=_blank" rel="noopener noreferrer"><svg
