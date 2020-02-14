@@ -1,6 +1,6 @@
 // Minimal Google Analytics via David
 
-(function(context, trackingId, options) {
+(function (context, trackingId, options) {
   const history = context.history;
   const doc = document;
   const nav = navigator || {};
@@ -58,8 +58,8 @@
       vp:
         options.screenSize && context.visualViewport
           ? `${(context.visualViewport || {}).width}x${
-              (context.visualViewport || {}).height
-            }`
+          (context.visualViewport || {}).height
+          }`
           : undefined,
       ec: eventCategory || undefined,
       ea: eventAction || undefined,
@@ -84,7 +84,7 @@
     track("event", category, action, label, value);
   const trackException = (description, fatal) =>
     track(typeException, null, null, null, null, description, fatal);
-  history.pushState = function(state) {
+  history.pushState = function (state) {
     if (typeof history.onpushstate == "function") {
       history.onpushstate({ state: state });
     }
@@ -96,7 +96,7 @@
     trackEvent,
     trackException
   };
-})(window, "XX-XXXXXXXXX-X", {
+})(window, "UA-154865406-3", {
   anonymizeIp: true,
   colorDepth: true,
   characterSet: true,
