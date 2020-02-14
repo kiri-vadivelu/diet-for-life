@@ -1,0 +1,2 @@
+<!-- Diet for Life -->
+The Diet for Life Project has been independently researched, revised and published to raise public awareness of food choices and healthy lifestyles in the 21st century. Should you be interested in contributing to the good-work, please email at hello@dietforlife.ca. 

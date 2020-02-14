@@ -1,0 +1,292 @@
+/* Structure */
+  :root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 62.5%/1.4 verdana, tahoma;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    --primary: ivory;
+    --secondary: grey;
+    --light: silver;
+    --dark: black;
+    --theme: green;
+    --highlight: red;
+  }
+  
+/* Style */
+  html,
+  body {
+    background: var(--primary);
+    color: var(--dark);
+    overflow: auto;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  #wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+    
+  #main {
+    max-width: 1500px;
+    min-height: 90vh;
+    padding: 75px 0 85px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  header {
+    top: 0;
+    position: fixed;
+  }
+
+  footer {
+    bottom: 0;
+    position: absolute;  
+  }
+  
+  header,
+  footer {
+    width: 100%;
+    opacity: 0.9;
+    color: var(--primary);
+    background: var(--theme);
+    z-index: 1;
+    overflow: hidden;
+  }
+    
+/* Content */
+  h1,
+  h2,
+  h3 {
+    opacity: 0.9;
+  }
+  
+  p {
+    font-size: 1.4rem;
+  }
+    
+  h1 {
+    padding: 0;
+    opacity: .7;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--theme);
+}
+  
+  h2 {
+    padding: 0;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom: 2px solid var(--highlight);
+}
+
+  .current {
+    color: var(--highlight);
+  }
+  
+  li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  svg,
+  img {
+    max-width: 100%;
+  }
+
+  article {
+    max-width: 1200px;
+  }
+
+  section {
+    width: 550px;
+  }
+
+  article,
+  section {
+    padding: 20px;
+  }
+  
+/* Navigation */  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #logo,
+  #menu {
+    text-transform: uppercase;
+  }
+  
+  #logo {
+    width: 10%;
+  }
+  
+  #logo a {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  
+  #menu {
+    width: 90%;
+  }
+  
+  #menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #menu li {
+    padding: 10px;
+  }
+   
+/* Header & Footer */     
+  footer p {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1.4rem;
+  }
+
+/* Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+}
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+}
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+  
+/* Landing */
+  .fa-food,
+  .fa-heart {
+  display: block;
+  margin: auto;
+}
+  .fa-food {
+    color: green;
+    max-width: 300px;
+    animation: slideRight 1s ease;
+    -webkit-animation: slideRight 1s ease;
+}
+
+  .fa-heart {
+    color: red;
+    max-width: 375px;
+    animation: slideLeft 1s ease;
+    -webkit-animation: slideLeft 1s ease;
+}
+
+  .mission h2 {
+    text-align: center;
+    border-bottom: solid 2px var(--highlight);
+    
+}
+
+/* Social Link */
+
+.contact {
+  max-width: 960px;
+}
+
+  .fa-email,
+  .fa-github,
+  .fa-facebook,
+  .fa-linkedin {
+    width: 35px;
+    color: var(--light);
+  }
+  
+  .contact ul {
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .contact li {
+    padding: 5px;
+    display: inline;
+    line-height: 3rem;
+    list-style: none;
+  }
+    
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  
+    #logo,
+    #menu,
+    #main,
+    article,
+    section {
+      width: 100%;
+    }
+  
+    #logo {
+      text-align: center;
+    }
+  
+    #menu li {
+      padding: 2px;
+    }
+  
+    #menu ul {
+      justify-content: space-evenly;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3,
+    h4 {
+      font-size: 1.3rem;
+    }
+}
