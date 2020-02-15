@@ -236,6 +236,13 @@
   padding-bottom: 20px;
 }
 
+/* .privacy,
+.cookies,
+.disclaimer,
+.terms a {
+  color: var(--secondary);
+} */
+
 /* Social */
 .contact,
 .form {
