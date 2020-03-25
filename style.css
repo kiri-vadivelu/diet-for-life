@@ -346,10 +346,6 @@ input[type="email"]:valid {
       text-align: center;
     }
   
-    /* #menu li {
-      padding: 2px;
-    } */
-  
     #menu ul {
       justify-content: space-evenly;
     }
