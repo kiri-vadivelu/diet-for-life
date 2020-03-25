@@ -361,3 +361,9 @@ input[type="email"]:valid {
       font-size: 1.5rem;
     }
   }
+
+  @media all and (orientation: landscape) and (min-aspect-ratio: 2/1){
+    footer {
+      display: none;
+    }
+  }
