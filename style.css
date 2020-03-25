@@ -337,6 +337,10 @@ input[type="email"]:valid {
     section {
       width: 100%;
     }
+
+    #main {
+      padding-bottom: 75px;
+    }
   
     #logo {
       text-align: center;
