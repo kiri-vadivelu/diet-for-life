@@ -362,7 +362,7 @@ input[type="email"]:valid {
     }
   }
 
-  @media all and (orientation: landscape) and (min-aspect-ratio: 2/1){
+  @media all and (orientation: landscape) and (max-height: 400px){
     footer {
       display: none;
     }
