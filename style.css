@@ -339,7 +339,7 @@ input[type="email"]:valid {
     }
 
     #main {
-      padding-bottom: 75px;
+      padding: 75px 0;
     }
   
     #logo {
